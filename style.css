@@ -19,24 +19,30 @@ p, a, li {
 
 h1, h2, h3 {
     font-family: genty_sans;
-    color: #fcb4c2;
+    color: #fbbeca;
     text-shadow: 4px 0 white, -4px 0 white, 0 4px white, 0 -4px white, 4px 4px white, -4px -4px white, -4px 4px white, 4px -4px white;
 }
 
 #header {
     position: sticky;
     top: 0;
-    background: #d5e4c1;
-    padding: 10px 20px;
+    background: #e3f0d1;
+    padding: 10px 10px;
+    height: fit-content;
+    height: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
 }
 
 #header img {
-    height: 20%;
-    
+    float: left;
+    height: 90%;
+    margin: 10px;
+    margin-right: 50px;
 }
 
 #img_container {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,12 +52,12 @@ h1, h2, h3 {
     border-radius: 10px;
     border-style: solid;
     border-width: 5px;
-    border-color: #d5e4c1;
+    border-color: #bdcda9;
     height: 50vh;
     width: fit-content;
     margin: 30px;
 }
 
-img {
+#card img {
     height: 100%;
 }
