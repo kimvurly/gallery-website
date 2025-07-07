@@ -25,12 +25,14 @@ h1, h2, h3 {
 
 #header {
     position: sticky;
+    z-index: 10;
     top: 0;
     background: #e3f0d1;
     padding: 10px 10px;
     height: fit-content;
     height: 150px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #header img {
@@ -46,26 +48,35 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+    z-index: 1;
 }
 
 .card {
+    cursor: pointer;
+    perspective: 1000px;
+    width: 20vw;
+    aspect-ratio: 3 / 4;
+    display: inline-block;
+    background-color: #ebf8ff;
+}
+
+.card_inner {
     border-radius: 10px;
     border-style: solid;
     border-width: 5px;
     border-color: #daeac4;
-    height: 50vh;
-    width: fit-content;
-    margin: 30px;
-    cursor: pointer;
-    perspective: 1000px;
-}
-
-.card_inner {
-    width: 100%;
-    height: 100%;
+    display: inline-block;
     position: relative;
+    height: 100%;
+    width: 100%;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    background-color: #fffdf4;
+}
+
+.card.flipped .card_inner {
+  transform: rotateY(180deg);
 }
 
 .card_front,
@@ -74,33 +85,22 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    overflow: hidden;
 }
 
 .card_front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card_back {
-    background-color: 
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
 }
-
-
-/* #card {
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #daeac4;
-    height: 50vh;
-    width: fit-content;
-    margin: 30px;
-}
-
-#card img {
-    height: 100%;
-} */
 
 #buttons {
     display: flex;
