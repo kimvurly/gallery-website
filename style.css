@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: #ebf8ff;
+}
+@font-face {
+    font-family: phantom_sans;
+    src: url(fonts/phantom_sans.ttf)
+}
+
+@font-face {
+    font-family: genty_sans;
+    src: url(fonts/genty_sans.ttf)
+}
+
+p, a, li {
+    font-family: phantom_sans;
+    color: #736c64;
+}
+
+h1, h2, h3 {
+    font-family: genty_sans;
+    color: #fcb4c2;
+    text-shadow: 4px 0 white, -4px 0 white, 0 4px white, 0 -4px white, 4px 4px white, -4px -4px white, -4px 4px white, 4px -4px white;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    background: #d5e4c1;
+    padding: 10px 20px;
+}
+
+#header img {
+    height: 20%;
+    
+}
+
+#img_container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#card {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #d5e4c1;
+    height: 50vh;
+    width: fit-content;
+    margin: 30px;
+}
+
+img {
+    height: 100%;
+}
