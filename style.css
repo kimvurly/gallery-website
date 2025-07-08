@@ -43,6 +43,7 @@ h1, h2, h3 {
 }
 
 .img_container {
+    margin-top: 50px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -102,7 +103,7 @@ h1, h2, h3 {
     padding: 10px;
 }
 
-#buttons {
+/* #buttons {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -120,4 +121,4 @@ button {
     width: 20%;
     background-color: #fffdf4;
     font-size: large;
-}
+} */
